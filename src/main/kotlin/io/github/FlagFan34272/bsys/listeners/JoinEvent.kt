@@ -16,7 +16,7 @@ class JoinEvent: Listener {
         Bukkit.getScheduler().runTaskTimer(plugin, Runnable {
             PotionEffectType.values().forEach { potionEffectType ->
                 player.addPotionEffect(PotionEffect(potionEffectType, 20, 1))
-                player.sendMessage(text("${potionEffectType.name} 포션 이펙트를 추가했습니다!", NamedTextColor.GREEN))
+                //player.sendMessage(text("${potionEffectType.name} 포션 이펙트를 추가했습니다!", NamedTextColor.GREEN))
             }
         },0L,1L)
     }
